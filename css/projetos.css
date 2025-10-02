@@ -1,0 +1,125 @@
+/*HEADER*/
+.perfil {
+  width: 100px;
+  height: 100px;
+  border-radius: 20%;
+  border: 3px black solid;
+  z-index: 1000;
+}
+.Nav-geral {
+  display: flex;               
+  list-style: none;             
+  margin: 0;
+  padding: 0;
+  gap: 20px;                    
+}
+.Nav-geral li {
+  display: inline-block;
+}
+.Nav {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: 0.3s;
+}
+.container {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+.header{
+  background-color: rgba(7, 4, 4, 0.27);
+  backdrop-filter: blur(10px);
+  height: 100px;
+  border-bottom: #000000 2px solid;
+}
+/*Main*/
+.container-projetos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+  gap: 20px; /* espaço entre os cards */
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.card {
+  width: 300px; 
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: rgb(34,34,34);
+  color: white;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  margin: 20px;
+  position: relative;
+}
+.card-img-container {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+.card-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.card-link-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #00aaff;
+  color: white;
+  padding: 8px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  z-index: 2;
+  transition: 0.3s;
+}
+.card-link-btn:hover {
+  background-color: #0077aa;
+}
+
+.card-desc {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.75);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  opacity: 0;
+  pointer-events: none;
+  padding: 10px;
+  transition: 0.4s ease;
+  z-index: 1;
+}
+.card-desc.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.card-desc-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffaa00;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card-desc-btn:hover {
+  background-color: #cc8800;
+}
