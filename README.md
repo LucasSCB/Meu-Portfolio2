@@ -40,7 +40,7 @@
 ---
 
 ## 📫 Contato
-- **E-mail:** seuemail@aqui.com  
+- **E-mail:** lucas_scb@outlook.com  
 - **LinkedIn:** (adicione aqui quando criarmos seu perfil otimizado)  
 
 ---
